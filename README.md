@@ -1,6 +1,6 @@
-# Project Name
+# Viking Ikea "Vikea"
 
-> Project description
+> Service oriented architecture showing vikea item pages.
 
 ## Related Projects
 
