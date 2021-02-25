@@ -4,8 +4,8 @@
 
 ## Related Projects
 
-  - https://github.com/teamName/repo
-  - https://github.com/teamName/repo
+  - https://github.com/IKEA-Vikings/vbao-sim-products
+  - https://github.com/IKEA-Vikings/kim-service-1
   - https://github.com/teamName/repo
   - https://github.com/teamName/repo
 
