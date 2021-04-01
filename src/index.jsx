@@ -9,12 +9,6 @@ class App extends React.Component {
   render() {
     return (
       <div className='app'>
-        <div id='about'>
-          {/* about component goes here! yay! */}
-        </div>
-        <div id='images'>
-
-        </div>
         <Review />
       </div>
     );
