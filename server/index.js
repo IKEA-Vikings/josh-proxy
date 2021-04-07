@@ -21,6 +21,10 @@ app.get('/src/:service', (req, res, next) => {
   })
     .then(serviceResponse => {
       res.send(serviceResponse.data);
+    })
+    .catch(err => {
+      console.error(err);
+      res.sendStatus(404);
     });
 });
 
@@ -40,6 +44,9 @@ app.get('/api/:service', (req, res, next) => {
 
   axios.get(requestUrl).then(serviceResponse => {
     res.send(serviceResponse.data);
+  }).catch(err => {
+    console.error(err);
+    res.sendStatus(404);
   });
 });
 
@@ -52,6 +59,10 @@ app.get('/api/:service/*', (req, res, next) => {
   axios.get(requestUrl)
     .then(serviceResponse => {
       res.send(serviceResponse.data);
+    })
+    .catch(err => {
+      console.error(err);
+      res.sendStatus(404);
     });
 });
 
@@ -65,6 +76,10 @@ app.get('/static/:service', (req, res, next) => {
     .then(serviceResponse => {
       res.type(serviceResponse.headers['content-type']);
       res.send(serviceResponse.data);
+    })
+    .catch(err => {
+      console.error(err);
+      res.sendStatus(404);
     });
 });
 
